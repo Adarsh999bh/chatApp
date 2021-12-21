@@ -17,7 +17,7 @@ app.use(express.static(publicPath));
 app.use(cors());
 const io = socketIO(server, {
   cors: {
-      origin: "http://localhost:3000",
+      origin: "https://real-time-chat-appli.herokuapp.com/",
       mehtods: ["GET", "POST"],
   },
 }) ;
